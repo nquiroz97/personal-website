@@ -1,3 +1,8 @@
+/* format is... 
+    selector{property: value;} */
+
+/*******************TAG Selectors*********************/
+
 body {
   background-color: #fefbf3;
 }
@@ -12,20 +17,18 @@ img {
   height: 100px;
 }
 
-li {
+footer {
+  background-color: #d3e4cd;
+}
+
+/*******************Class Selectors*********************/
+
+.text {
   color: #9d9d9d;
 }
 
-h3 {
+.bigText {
   color: #79b4b7;
-}
-
-h1 {
-  color: #79b4b7;
-}
-
-footer {
-  background-color: #d3e4cd;
 }
 
 .tab {
@@ -45,7 +48,8 @@ footer {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: inherit;
+  border: solid #79b4b7;
 }
 
 /* Create an active/current tablink class */
@@ -59,4 +63,11 @@ footer {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+/*******************ID Selectors*********************/
+/* you can only have one instance of the given id in the page,
+   classes are best for multiple elements using the same style */
+#heading {
+  color: #79b4b7;
 }
